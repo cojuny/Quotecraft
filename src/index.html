@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Quotecraft</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Quotecraft</span>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Quotecraft</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+
+            <li class="list">
+                <input type="checkbox" id="trigger1"/>
+                <label for="trigger1" class="nav-link">
+                    <i class="bx bx-sort icon"></i>
+                    <span class="link">Sort by</span>
+                </label>
+                <div>
+                  
+                  <button id="sort_latest" class="sort-button">Latest</button>
+                  <button id="sort_oldest" class="sort-button">Oldest</button>
+                  <button id="sort_random" class="sort-button">Random</button>
+
+                  </div>
+            </li>
+
+            
+            <li class="list">
+                <input type="checkbox" id="trigger2"/>
+                <label for="trigger2" class="nav-link">
+                  <i class="bx bxs-file-plus icon"></i>
+                  <span class="link">Add quote</span>
+                </label>
+                <div>
+                  <label for="quote"><b>Quote</b></label>
+                  <input type="text" placeholder="Enter quote" name="quote" required>
+              
+                  <label for="author"><b>Author</b></label>
+                  <input type="text" placeholder="Enter author" name="author" required>
+              
+                  <button class="upload-button" type="upload">Upload</button>
+                  </div>
+    
+              </li>
+              
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"> </section>
+
+    <div class="quote-container">
+
+      <div class="quote-wrapper">
+        <div class="quote">
+          I am in the right place for the right time, doing the right thing.
+        </div>
+        <div class="line"></div> 
+        <div class="author">
+          LOUISE HAY
+        </div>
+        
+
+
+
+      </div>
+  
+      <div class="quote-wrapper">
+        <div class="quote">
+          Conscious breathing is my anchor.
+        </div>
+        <div class="line"></div> 
+        <div class="author">
+          THICH NHAT HANH
+        </div>
+        
+      </div>
+  
+      <div class="quote-wrapper">
+          <div class="quote">
+            You are loved just for being who you are, just for existing.
+          </div>
+          <div class="line"></div> 
+          <div class="author">
+            RAM DASS
+          </div>
+        </div>
+  
+        <div class="quote-wrapper">
+          <div class="quote">
+            The chance to love and be loved exists no matter where you are.
+          </div>
+          <div class="line"></div> 
+          <div class="author">
+            OPRAH
+          </div>
+        </div>
+  
+        <div class="quote-wrapper">
+          <div class="quote">
+            Courage starts with showing up and letting ourselves be seen.
+          </div>
+          <div class="line"></div> 
+          <div class="author">
+            BRENE BROWN
+          </div>
+        </div>
+  
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
