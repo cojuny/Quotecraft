@@ -72,69 +72,20 @@
 
     <div class="quote-container">
 
+      {% for quote in quotes %}
       <div class="quote-wrapper">
         <div class="quote">
-          I am in the right place for the right time, doing the right thing.
+          {{ quote.0 }}
         </div>
         <div class="line"></div> 
         <div class="author">
-          LOUISE HAY
+          {{ quote.1 }}
         </div>
-        
-
-
 
       </div>
-  
-      <div class="quote-wrapper">
-        <div class="quote">
-          Conscious breathing is my anchor.
-        </div>
-        <div class="line"></div> 
-        <div class="author">
-          THICH NHAT HANH
-        </div>
-        
-      </div>
-  
-      <div class="quote-wrapper">
-          <div class="quote">
-            You are loved just for being who you are, just for existing.
-          </div>
-          <div class="line"></div> 
-          <div class="author">
-            RAM DASS
-          </div>
-        </div>
-  
-        <div class="quote-wrapper">
-          <div class="quote">
-            The chance to love and be loved exists no matter where you are.
-          </div>
-          <div class="line"></div> 
-          <div class="author">
-            OPRAH
-          </div>
-        </div>
-  
-        <div class="quote-wrapper">
-          <div class="quote">
-            Courage starts with showing up and letting ourselves be seen.
-          </div>
-          <div class="line"></div> 
-          <div class="author">
-            BRENE BROWN
-          </div>
-        </div>
-  
+      {% endfor %}
     </div>
+  </div>
 
-
-
-
-
-
-
-    
   </body>
 </html>
