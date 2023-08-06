@@ -51,15 +51,16 @@
                   <i class="bx bxs-file-plus icon"></i>
                   <span class="link">Add quote</span>
                 </label>
-                <div>
+                <form action='/submit/' method="post">
+                  {% csrf_token %}
                   <label for="quote"><b>Quote</b></label>
                   <input type="text" placeholder="Enter quote" name="quote" required>
               
                   <label for="author"><b>Author</b></label>
                   <input type="text" placeholder="Enter author" name="author" required>
               
-                  <button class="upload-button" type="upload">Upload</button>
-                  </div>
+                  <button class="upload-button" type="submit" value="Submit">Upload</button>
+                </form>
     
               </li>
               

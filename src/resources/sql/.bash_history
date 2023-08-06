@@ -7,3 +7,5 @@ ls
 su -i
 sudo -i
 exit
+sudo -i
+exit

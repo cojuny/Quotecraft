@@ -1,10 +1,17 @@
-from django.http import HttpResponse 
-from django.shortcuts import render 
-from .models import get_quote
+from django.urls import reverse
+from django.shortcuts import render, redirect
+from .models import get_quote, insert_quote
 
 
 def request_webpage(request): 
-    quotes = get_quote()
-    context = {'quotes': quotes}
+    context = get_quote()
     return render(request, 'index.html', context) 
+
+def create_quote(request):
+    if request.method == 'POST':
+        quote = request.POST.get('quote')
+        author = request.POST.get('author')
+        insert_quote(quote, author)
+    
+    return redirect(request_webpage)
 

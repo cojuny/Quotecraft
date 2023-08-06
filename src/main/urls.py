@@ -20,5 +20,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.request_webpage)
+    path('', views.request_webpage),
+    path('submit/', views.create_quote)
 ]
