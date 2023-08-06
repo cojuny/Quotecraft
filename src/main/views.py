@@ -4,7 +4,7 @@ from .models import get_quote, insert_quote
 
 
 def request_webpage(request): 
-    context = get_quote()
+    context = get_quote(request.GET.get('sort'))
     return render(request, 'index.html', context) 
 
 def create_quote(request):
@@ -15,3 +15,5 @@ def create_quote(request):
     
     return redirect(request_webpage)
 
+def latest(request):
+    return render(request, 'latest.html')

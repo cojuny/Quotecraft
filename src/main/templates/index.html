@@ -36,10 +36,29 @@
                     <span class="link">Sort by</span>
                 </label>
                 <div>
+
+                  {% if request.GET.sort == 'latest' %}
+                    <button class="sort-button selected" type="button" onclick="location.href='{% url 'root' %}?sort=latest'">Latest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=oldest'">Oldest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=random'">Random</button>
+
+                  {% elif request.GET.sort == 'oldest' %}
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=latest'">Latest</button>
+                    <button class="sort-button selected" type="button" onclick="location.href='{% url 'root' %}?sort=oldest'">Oldest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=random'">Random</button>
+
+
+                  {% elif request.GET.sort == 'random' %}
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=latest'">Latest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=oldest'">Oldest</button>
+                    <button class="sort-button selected" type="button" onclick="location.href='{% url 'root' %}?sort=random'">Random</button>
                   
-                  <button id="sort_latest" class="sort-button">Latest</button>
-                  <button id="sort_oldest" class="sort-button">Oldest</button>
-                  <button id="sort_random" class="sort-button">Random</button>
+                  {% else %}
+                    <button class="sort-button selected" type="button" onclick="location.href='{% url 'root' %}?sort=latest'">Latest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=oldest'">Oldest</button>
+                    <button class="sort-button" type="button" onclick="location.href='{% url 'root' %}?sort=random'">Random</button>
+                  {% endif %}
+                  
 
                   </div>
             </li>
@@ -51,6 +70,7 @@
                   <i class="bx bxs-file-plus icon"></i>
                   <span class="link">Add quote</span>
                 </label>
+                <div>
                 <form action='/submit/' method="post">
                   {% csrf_token %}
                   <label for="quote"><b>Quote</b></label>
@@ -61,7 +81,7 @@
               
                   <button class="upload-button" type="submit" value="Submit">Upload</button>
                 </form>
-    
+                </div>
               </li>
               
           </ul>

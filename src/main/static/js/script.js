@@ -27,35 +27,3 @@ container.addEventListener('wheel', (event) => {
 
 
 
-
-const sort_latest = document.getElementById('sort_latest');
-const sort_oldest = document.getElementById('sort_oldest');
-const sort_random = document.getElementById('sort_random');
-
-function updateSelectedButton(selectedBtn) {
-  // Remove 'selected' class from all buttons
-  sort_latest.classList.remove('selected');
-  sort_oldest.classList.remove('selected');
-  sort_random.classList.remove('selected');
-
-  // Add 'selected' class to the selected button
-  selectedBtn.classList.add('selected');
-}
-
-sort_latest.addEventListener('click', () => {
-  updateSelectedButton(sort_latest);
-  // Add your logic for handling the 'Latest' button click here
-});
-
-sort_oldest.addEventListener('click', () => {
-  updateSelectedButton(sort_oldest);
-  // Add your logic for handling the 'Oldest' button click here
-});
-
-sort_random.addEventListener('click', () => {
-  updateSelectedButton(sort_random);
-  // Add your logic for handling the 'Random' button click here
-});
-
-
-
