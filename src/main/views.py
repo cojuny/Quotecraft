@@ -1,7 +1,16 @@
-from django.urls import reverse
+from typing import Any
+from django.db.models.query import QuerySet
 from django.shortcuts import render, redirect
-from .models import get_quote, insert_quote
+from .models import get_quote, insert_quote, Quote
+from django.views.generic import ListView
 
+class QuoteView(ListView):
+    template_name = 'index.html'
+    model = Quote
+    context_object_name = 'quotes'
+    paginate_by = 2
+    def get_queryset(self) -> QuerySet[Any]:
+        return get_quote(self.request.GET.get('sort'))
 
 def request_webpage(request): 
     context = get_quote(request.GET.get('sort'))
@@ -13,7 +22,8 @@ def create_quote(request):
         author = request.POST.get('author')
         insert_quote(quote, author)
     
-    return redirect(request_webpage)
-
-def latest(request):
-    return render(request, 'latest.html')
+    sort_param = request.GET.get('sort', '') 
+    if sort_param:
+        return redirect('root', sort=sort_param)  # Redirect to the 'root' URL pattern with sort parameter
+    else:
+        return redirect('root') 

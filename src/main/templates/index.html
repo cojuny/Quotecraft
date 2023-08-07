@@ -7,7 +7,9 @@
    <title>Quotecraft</title>
    {% load static %}
     <link rel="stylesheet" hype="text/css" href="{% static 'css/style.css' %}" />
-    <script src="{% static 'js/script.js' %}" defer></script>
+    
+
+
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
@@ -91,22 +93,54 @@
     </nav>
     <section class="overlay"> </section>
 
-    <div class="quote-container">
+    <div class="quote-container infinite-container">
+      <div class="infinite-container">
+        {% for quote in quotes %}
+        <div class="quote-wrapper infinite-item col-md-12">
+          <div class="quote">
+            {{ quote.quote }}
+          </div>
+          <div class="line"></div> 
+          <div class="author">
+            {{ quote.author }}
+          </div>
 
-      {% for quote in quotes %}
-      <div class="quote-wrapper">
-        <div class="quote">
-          {{ quote.0 }}
         </div>
-        <div class="line"></div> 
-        <div class="author">
-          {{ quote.1 }}
-        </div>
-
+        {% endfor %}
+        
       </div>
-      {% endfor %}
+      {% if page_obj.has_next %}
+        <a class="infinite-more-link" href="?page={{ page_obj.next_page_number }}"></a>
+      {% endif %}
     </div>
+    
+
+    
+    
+
   </div>
+
+  
+  <script src="{% static 'js/script.js' %}" ></script>
+  <script src="{% static 'js/jquery-2.2.4.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/infinite.min.js' %}"></script>
+  <script>
+    var infinite = new Waypoint.Infinite({
+        element: $('.infinite-container')[0],
+        
+        offset: 'bottom-in-view',
+
+        onBeforePageLoad: function () {
+        
+        },
+        onAfterPageLoad: function () {
+        
+        }
+
+    });
+
+    </script>
 
   </body>
 </html>

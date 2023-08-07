@@ -20,7 +20,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.request_webpage, name='root'),
+    path('', views.QuoteView.as_view(), name='root'),
     path('submit/', views.create_quote),
-    path('latest/', views.latest)
 ]

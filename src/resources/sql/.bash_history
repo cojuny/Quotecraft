@@ -9,3 +9,6 @@ sudo -i
 exit
 sudo -i
 exit
+sudo -i
+exit
+mysql -uroot -p quotes
