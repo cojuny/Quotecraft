@@ -8,7 +8,6 @@ class QuoteView(ListView):
     template_name = 'index.html'
     model = Quote
     context_object_name = 'quotes'
-    paginate_by = 2
     def get_queryset(self) -> QuerySet[Any]:
         return get_quote(self.request.GET.get('sort'))
 

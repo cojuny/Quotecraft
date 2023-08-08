@@ -131,6 +131,7 @@ input:checked ~ div {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .quote-wrapper {
