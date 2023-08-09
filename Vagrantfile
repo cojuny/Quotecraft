@@ -4,9 +4,11 @@ Vagrant.configure("2") do |config|
 
   ### DB vm  ####
     config.vm.define "db01" do |db01|
-      db01.vm.box = "geerlingguy/centos7"
+      db01.vm.box = "centos/7"
       db01.vm.hostname = "db01"
       db01.vm.network "private_network", ip: "192.168.56.15"
+      db01.vbguest.installer_hooks[:before_install] = ["yum install -y epel-release", "sleep 1"]
+      db01.vbguest.installer_options = { allow_kernel_upgrade: false , enablerepo: true }
       db01.vm.synced_folder "./src/resources/sql", "/home/vagrant"
     end
   end
