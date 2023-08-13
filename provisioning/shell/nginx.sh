@@ -4,12 +4,19 @@ apt install nginx -y
 cat <<EOT > webapp
 upstream webapp {
 
- server dj01:8000;
+  server dj01:8000;
+  server dj02:8000;
+
 }
 
 server {
-
+  
   listen 80;
+
+location /static/ {
+  proxy_pass http://webapp;
+  
+}
 
 location / {
 

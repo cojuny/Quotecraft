@@ -13,3 +13,22 @@ sudo make altinstall
 
 sudo apt-get install -y libssl-dev curl python3-dev python3-pip default-libmysqlclient-dev 
 pip3.10 install -r /vagrant/requirements.txt
+
+cat <<EOT > /etc/systemd/system/quotecraft.service
+
+[Unit]
+Description=Django service running Quotecraft website
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/python3.10 /src/manage.py runserver 0.0.0.0:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+EOT
+
+sudo systemctl daemon-reload
+sudo systemctl start quotecraft
+sudo systemctl enable quotecraft
+

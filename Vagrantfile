@@ -31,27 +31,28 @@ Vagrant.configure("2") do |config|
     dj01.vm.box = "hashicorp/bionic64"
     dj01.vm.hostname = "dj01"
     dj01.vm.network "private_network", ip: "192.168.56.16"
-    dj01.vm.synced_folder "./src", "/vagrant"
     dj01.vbguest.auto_update = true
-    dj01.vm.provision "file", source: "provisioning/resources/django", destination: "/vagrant"
+    dj01.vm.synced_folder "./src", "/src"
+    dj01.vm.synced_folder "provisioning/resources/django", "/vagrant"
     dj01.vm.provision "shell", path: "provisioning/shell/django.sh" 
     dj01.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
     end
-    dj01.vm.provision "shell", path: "provisioning/shell/django_run.sh" 
   end
 
   ### Django vm 2 ###
-  #config.vm.define "dj02" do |dj02|
-  #  dj02.vm.box = "hashicorp/bionic64"
-  #  dj02.vm.hostname = "dj02"
-  #  dj02.vm.network "private_network", ip: "192.168.56.17"
-  #  dj02.vm.provision "shell", path: "provisioning/shell/django.sh" 
-  #  dj02.vm.synced_folder "./src", "/vagrant"
-  #  dj02.vm.provider "virtualbox" do |vb|
-  #    vb.memory = "1024"
-  #  end
-  #end
+  config.vm.define "dj02" do |dj02|
+    dj02.vm.box = "hashicorp/bionic64"
+    dj02.vm.hostname = "dj02"
+    dj02.vm.network "private_network", ip: "192.168.56.17"
+    dj02.vbguest.auto_update = true
+    dj02.vm.synced_folder "./src", "/src"
+    dj02.vm.synced_folder "provisioning/resources/django", "/vagrant"
+    dj02.vm.provision "shell", path: "provisioning/shell/django.sh" 
+    dj02.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+    end
+  end
 
   ### Nginx VM ###
   config.vm.define "ngx01" do |ngx01|
