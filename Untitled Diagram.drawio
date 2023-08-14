@@ -1,23 +1,122 @@
-<mxfile host="app.diagrams.net" modified="2023-08-14T11:15:22.191Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" etag="zE8kNhO0zqEj3JgXp2Ln" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-14T11:35:11.030Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" etag="aOs_q2gSSMQli4e-DNjA" version="21.6.8" type="github">
   <diagram name="Page-1" id="WmC59NLkMFQhjV69n-to">
-    <mxGraphModel dx="1583" dy="1101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2230" dy="1023" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="9JQAyZCFJX8GcsmempdC-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
-          <mxGeometry x="370" y="130" width="192" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="9JQAyZCFJX8GcsmempdC-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
-          <mxGeometry x="370" y="310" width="192" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="9JQAyZCFJX8GcsmempdC-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/424px-Database-mysql.svg.png;" vertex="1" parent="1">
-          <mxGeometry x="622" y="460" width="140" height="198.12" as="geometry" />
+        <mxCell id="9JQAyZCFJX8GcsmempdC-13" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;mc01: Cache Server&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="925" y="180" width="220" height="220" as="geometry" />
         </mxCell>
         <mxCell id="9JQAyZCFJX8GcsmempdC-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://download.logo.wine/logo/Memcached/Memcached-Logo.wine.png;" vertex="1" parent="1">
-          <mxGeometry x="557" y="189.99999999999994" width="270" height="180" as="geometry" />
+          <mxGeometry x="900" y="184.99999999999994" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-10" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;dj01: Web Server&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="516" y="60" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-8" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;ngx01: Load balancer&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="220" height="220" as="geometry" />
         </mxCell>
         <mxCell id="9JQAyZCFJX8GcsmempdC-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://en-wiki.ikoula.com/images/4/4a/Nginx.png;" vertex="1" parent="1">
-          <mxGeometry x="160" y="200" width="160" height="160" as="geometry" />
+          <mxGeometry x="135" y="210" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
+          <mxGeometry x="530" y="90" width="192" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-12" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;dj02: Web Server&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="516" y="290" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
+          <mxGeometry x="530" y="320" width="192" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-14" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;db01: Web Server&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="925" y="540" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/424px-Database-mysql.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="973.83" y="540" width="122.33" height="173.12" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-80" y="280" as="sourcePoint" />
+            <mxPoint x="60" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-18" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;Request sent to:&lt;br&gt;192.168.57.10:80&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-95" y="215" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="289" as="sourcePoint" />
+            <mxPoint x="344" y="289.33" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-22" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="290" as="sourcePoint" />
+            <mxPoint x="470" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="170" as="sourcePoint" />
+            <mxPoint x="500" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-24" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="470" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="399.13" as="sourcePoint" />
+            <mxPoint x="500" y="399.13" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-26" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Round-robin&lt;br&gt;load balancing&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-27" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="410" as="sourcePoint" />
+            <mxPoint x="780" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="290" as="sourcePoint" />
+            <mxPoint x="780" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="409.13" as="sourcePoint" />
+            <mxPoint x="750" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="169.5" as="sourcePoint" />
+            <mxPoint x="750" y="170.37" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="290" as="sourcePoint" />
+            <mxPoint x="890" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-33" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Server-side&lt;br&gt;cache check&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="790" y="220" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1034.56" y="410" as="sourcePoint" />
+            <mxPoint x="1034" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-35" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Database query&lt;br&gt;if cache data &lt;br&gt;is not found&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="430" width="150" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
