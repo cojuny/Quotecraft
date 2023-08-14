@@ -1,9 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2023-08-14T11:10:53.383Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" version="21.6.8" etag="XmaU2XtkLHCpUSWcuVOd" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-14T11:15:22.191Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188" etag="zE8kNhO0zqEj3JgXp2Ln" version="21.6.8" type="github">
   <diagram name="Page-1" id="WmC59NLkMFQhjV69n-to">
-    <mxGraphModel>
+    <mxGraphModel dx="1583" dy="1101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9JQAyZCFJX8GcsmempdC-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
+          <mxGeometry x="370" y="130" width="192" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://nyesteventuretech.com/images/django-development.png;" vertex="1" parent="1">
+          <mxGeometry x="370" y="310" width="192" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/424px-Database-mysql.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="622" y="460" width="140" height="198.12" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://download.logo.wine/logo/Memcached/Memcached-Logo.wine.png;" vertex="1" parent="1">
+          <mxGeometry x="557" y="189.99999999999994" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9JQAyZCFJX8GcsmempdC-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://en-wiki.ikoula.com/images/4/4a/Nginx.png;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="160" height="160" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
