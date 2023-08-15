@@ -38,6 +38,7 @@ Vagrant.configure("2") do |config|
     dj01.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
     end
+    dj01.vm.provision "shell", run: "always", inline: "sudo systemctl start quotecraft.service"
   end
 
   ### Django vm 2 ###
@@ -52,6 +53,8 @@ Vagrant.configure("2") do |config|
     dj02.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
     end
+    dj02.vm.provision "shell", run: "always", inline: "sudo systemctl start quotecraft.service"
+
   end
 
   ### Nginx VM ###

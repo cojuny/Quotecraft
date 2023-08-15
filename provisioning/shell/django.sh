@@ -29,6 +29,5 @@ WantedBy=multi-user.target
 EOT
 
 sudo systemctl daemon-reload
-sudo systemctl start quotecraft
-sudo systemctl enable quotecraft
+
 
